@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Documentación Técnica - Python</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav id="navbar">
+    <header>Python Docs</header>
+    <a class="nav-link" href="#Introducción">Introducción</a>
+    <a class="nav-link" href="#Instalación">Instalación</a>
+    <a class="nav-link" href="#Sintaxis_Básica">Sintaxis Básica</a>
+    <a class="nav-link" href="#Tipos_de_Datos">Tipos de Datos</a>
+    <a class="nav-link" href="#Control_de_Flujo">Control de Flujo</a>
+    <a class="nav-link" href="#Funciones">Funciones</a>
+    <a class="nav-link" href="#Manejo_de_Errores">Manejo de Errores</a>
+    <a class="nav-link" href="#Módulos_y_Paquetes">Módulos y Paquetes</a>
+  </nav>
+
+  <main id="main-doc">
+    <section class="main-section" id="Introducción">
+      <header>Introducción</header>
+      <p>Python es un lenguaje de programación versátil y fácil de aprender.</p>
+      <p>Se utiliza en desarrollo web, análisis de datos, inteligencia artificial, entre otros.</p>
+    </section>
+
+    <section class="main-section" id="Instalación">
+      <header>Instalación</header>
+      <p>Python se puede descargar desde su sitio web oficial.</p>
+      <p>También puedes usar gestores de paquetes como apt o brew.</p>
+      <code>sudo apt install python3</code>
+    </section>
+
+    <section class="main-section" id="Sintaxis_Básica">
+      <header>Sintaxis Básica</header>
+      <p>La sintaxis de Python es clara y concisa.</p>
+      <p>Los bloques se definen por indentación.</p>
+      <code>print("Hola mundo")</code>
+      <code>if True:
+  print("Verdadero")</code>
+      <ul>
+        <li>Indentación obligatoria</li>
+        <li>No se usan llaves</li>
+        <li>Sensible a espacios</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Tipos_de_Datos">
+      <header>Tipos de Datos</header>
+      <p>Python tiene varios tipos de datos incorporados.</p>
+      <p>Los más comunes son: int, float, str, list, dict.</p>
+      <code>mi_lista = [1, 2, 3]</code>
+      <code>mi_dict = {"clave": "valor"}</code>
+      <ul>
+        <li>int: enteros</li>
+        <li>float: decimales</li>
+        <li>str: texto</li>
+        <li>list: listas</li>
+        <li>dict: diccionarios</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Control_de_Flujo">
+      <header>Control de Flujo</header>
+      <p>Permite decidir qué código se ejecuta y cuántas veces.</p>
+      <p>Incluye condicionales y bucles.</p>
+      <code>if x > 10:
+  print("Mayor a 10")</code>
+      <code>for i in range(5):
+  print(i)</code>
+      <ul>
+        <li>if/else</li>
+        <li>for</li>
+        <li>while</li>
+        <li>break</li>
+        <li>continue</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Funciones">
+      <header>Funciones</header>
+      <p>Las funciones permiten reutilizar código.</p>
+      <p>Se definen con la palabra clave def.</p>
+      <p>Pueden tener parámetros y devolver valores.</p>
+      <p>Mejoran la legibilidad y mantenimiento.</p>
+      <p>También existen funciones lambda.</p>
+      <ul>
+        <li>def</li>
+        <li>return</li>
+        <li>lambda</li>
+        <li>args/kwargs</li>
+        <li>funciones anónimas</li>
+      </ul>
+      <code>def suma(a, b):
+  return a + b</code>
+    </section>
+
+    <section class="main-section" id="Manejo_de_Errores">
+      <header>Manejo de Errores</header>
+      <p>Python maneja errores con try y except.</p>
+      <p>Permite controlar excepciones sin que el programa falle.</p>
+      <p>También existen else y finally.</p>
+      <p>Se pueden lanzar errores con raise.</p>
+      <p>El manejo correcto evita errores inesperados.</p>
+      <ul>
+        <li>try</li>
+        <li>except</li>
+        <li>else</li>
+        <li>finally</li>
+        <li>raise</li>
+      </ul>
+      <code>try:
+  x = 1 / 0
+except ZeroDivisionError:
+  print("Error")</code>
+    </section>
+
+    <section class="main-section" id="Módulos_y_Paquetes">
+      <header>Módulos y Paquetes</header>
+      <p>Permiten organizar código en archivos reutilizables.</p>
+      <p>Los paquetes agrupan varios módulos.</p>
+      <p>Se importan con import o from ... import ...</p>
+      <p>El archivo __init__.py define un paquete.</p>
+      <p>Facilita el mantenimiento del proyecto.</p>
+      <ul>
+        <li>import</li>
+        <li>from ... import</li>
+        <li>__init__.py</li>
+        <li>pip</li>
+        <li>paquetes externos</li>
+      </ul>
+      <code>import math
+print(math.pi)</code>
+    </section>
+  </main>
+</body>
+</html>
